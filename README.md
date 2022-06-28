@@ -76,7 +76,7 @@ curl -X 'POST' \
 }'
 ```
 
-#####Respuesta
+- Respuesta
 ```
 {
   "id": "faa673fb-2809-4035-93ee-251c79b614b1",
@@ -94,7 +94,7 @@ curl -X 'GET' \
   'http://localhost:8080/users/findByEmail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiaHR0cDovL25pc3VtLmNvbSIsIm5hbWUiOiJSdWJlbiBNb3Jlbm8iLCJlbWFpbCI6InJ1YmVuQG1vcmVuby5jbCIsImlhdCI6MTQ2Njc5NjgyMiwiZXhwIjo0NjIyNDcwNDIyfQ.yqiie-tNtf-SZ0wzrB4Iyi7mFwFLiFaO_CbmuZFVjzI&email=ruben%40moreno.cl' \
   -H 'accept: application/json'
 ```
-#####Respuesta
+- Respuesta
 
 ```
 {
@@ -131,17 +131,11 @@ curl -X 'GET' \
 
 <!DOCTYPE html>
 <html>
-<style>
-table, th, td {
-  border:1px solid black;
-  color:blue;
-}
-</style>
 <body>
 
-<h2>Se adjuntan en la carpeta del proyecto diagrama de la solución y colección para consumo de los servicios</h2>
+<h4>Se adjuntan en la carpeta del proyecto diagrama de la solución y colección para consumo de los servicios</h4>
 
-<table style="width:100%">
+<table style="width:100%;border:1px solid black;color:blue;">
   <tr>
     <th>Autor</th>
     <th>Profesion</th>
