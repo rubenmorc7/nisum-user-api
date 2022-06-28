@@ -117,7 +117,7 @@ curl -X 'GET' \
 }
 ```
 
-##Tecnologías utilizadas
+<h3>Tecnologías utilizadas</h3>
 
 - JDK 8 +
 - Spring Boot
