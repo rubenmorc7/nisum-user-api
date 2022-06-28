@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "953c2b3a-91f7-4c90-82e1-46fceb9bbcd7",
+		"name": "Nisum user api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users/create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ruben Moreno\",\r\n  \"email\": \"ruben@moreno.cl\",\r\n  \"password\": \"Hawk123@\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"3333333\",\r\n      \"citycode\": \"11\",\r\n      \"countrycode\": \"57\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/create-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/findByEmail",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/findByEmail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiaHR0cDovL25pc3VtLmNvbSIsIm5hbWUiOiJSdWJlbiBNb3Jlbm8iLCJlbWFpbCI6InJ1YmVuQG1vcmVuby5jbCIsImlhdCI6MTQ2Njc5NjgyMiwiZXhwIjo0NjIyNDcwNDIyfQ.yqiie-tNtf-SZ0wzrB4Iyi7mFwFLiFaO_CbmuZFVjzI&email=ruben@moreno.cl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"findByEmail"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiaHR0cDovL25pc3VtLmNvbSIsIm5hbWUiOiJSdWJlbiBNb3Jlbm8iLCJlbWFpbCI6InJ1YmVuQG1vcmVuby5jbCIsImlhdCI6MTQ2Njc5NjgyMiwiZXhwIjo0NjIyNDcwNDIyfQ.yqiie-tNtf-SZ0wzrB4Iyi7mFwFLiFaO_CbmuZFVjzI"
+						},
+						{
+							"key": "email",
+							"value": "ruben@moreno.cl"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
